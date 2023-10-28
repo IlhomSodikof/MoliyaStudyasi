@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  /* background:  url('./assets/img/bg.svg');
+  background-size: 100%;
+  background-repeat: repeat-y; */
+  overflow: auto;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.81vw;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #214690;
+  border-radius: 0.27vw;
+}
+
+
+
+
+header:has(nav li:nth-child(2) a.active) {
+  background-color: #214791 !important;
+  --color-text: #fff !important;
+}
+
+
+header:has(nav li:nth-child(2) a.active) .logo img {
+  filter: invert(100%) saturate(150%) brightness(900%);
+}
+
+
+header:has(nav li:nth-child(2) a.active) .register__enter {
+  color: #fff !important;
+}
+
+header:has(nav li:nth-child(2) a.active) nav li a:hover {
+  color: #fff !important;
+}
+
+header:has(nav li:nth-child(2) a.active) .login__enter svg {
+  width: 2.5vw;
+  height: 2.5vw;
+  margin-left: 0.5vw;
+  filter: invert(100%) hue-rotate(45deg);
+}
+
+header:has(nav li:nth-child(2) a.active) .login__enter {
+  background: #fff;
+  color: #214690;
+}

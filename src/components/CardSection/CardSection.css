@@ -1,0 +1,293 @@
+.card__section {
+    width: 60vw;
+    margin: 6vw auto;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    
+}
+
+
+@media (max-width:991px) {
+    .card__section{
+        height: 60vw;
+    }
+}
+
+
+
+
+.cards__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3.2vw;
+}
+
+.card {
+    height: 27vw;
+    border: 0.1vw solid transparent;
+    border-radius: 2.3vw;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 19px 82px #D1E6FF;
+    padding: 2vw;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 19px 82px #D1E6FF;
+    border-radius: 2vw;
+}
+
+.card:hover .button__hover {
+    display: flex;
+    animation: totop 0.5s ease;
+}
+
+.card__overlay {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.1vw);
+    filter: saturate(200%);
+    border: 0.1vw solid #376CBB;
+    border-radius: 44px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 2vw;
+    display: none;
+}
+
+.card h3 {
+    margin-top: 1vw;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25vw;
+    line-height: 1.6vw;
+    color: #22407C;
+    margin-bottom: 0.8vw;
+    width: 65%;
+
+}
+
+.card p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.82vw;
+    line-height: 1.1vw;
+    color: rgba(34, 64, 124, 0.8);
+
+}
+
+.icon__card {
+    display: flex;
+    flex-direction: column;
+    width: 4.3vw;
+    height: 4.3vw;
+
+}
+
+.icon__card>svg {
+    width: 4.3vw;
+    height: 4.3vw;
+    background: #E8F0FF;
+    border-radius: 1.4vw;
+    padding: 1vw;
+}
+
+.card__utils {
+    margin-top: 2vw;
+}
+
+.card__utils li svg {
+    width: 1.6vw;
+    height: 1.6vw;
+    margin-right: 0.7vw;
+}
+
+.card__utils li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw;
+
+}
+
+.card__utils li span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.83vw;
+    line-height: 1.2vw;
+    color: #000000;
+
+}
+
+.card__utils li:nth-child(3) span {
+    width: 80%;
+}
+
+.button__hover {
+    background: #376CBB;
+    border-radius: 0px 0px 44px 44px;
+    border-radius: 0 0 2vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    height: 7vw;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0.02vw;
+    cursor: pointer;
+}
+
+.button__hover:hover {
+    background: linear-gradient(92.42deg, #071635 3.72%, #20406a 92.65%);
+}
+
+
+.button__hover h4 {
+    font-size: 1.2vw;
+    color: #fff;
+    line-height: 1vw;
+}
+
+.button__hover svg {
+    width: 2vw;
+    height: 1.5vw;
+    margin-left: 1vw;
+}
+
+
+
+.card:hover .card__overlay {
+    display: block;
+    animation: totop 0.5s ease;
+}
+
+
+
+@keyframes totop {
+
+    from {
+        transform: translateY(360px) scale(0.2);
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+    .card__section{
+        height: auto;
+        display: grid;
+        place-items: end;
+        margin-top: 36vw;
+        margin-bottom: 20vw;
+        width: 80vw;
+    }
+
+
+    .cards__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3.2vw;
+    }
+
+    .card h3 {
+        margin-top: 1vw;
+        font-size: 4.25vw;
+        line-height: 5.6vw;
+        margin-bottom: 0.8vw;
+        width: 100%;
+    
+    }
+    
+    .card p {
+        font-size: 2.52vw;
+        line-height: 3.1vw;
+        color: rgba(34, 64, 124, 0.8);
+    
+    }
+    
+    .card{
+        height: auto;
+        padding: 3vw;
+        border-radius: 5vw;
+    }
+
+    .card__overlay {
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(0.1vw);
+        filter: saturate(200%);
+        border: 0.5vw solid #376CBB;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 5vw;
+        display: none;
+    }
+
+    .card__utils li span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 5.2vw;
+        color: #000000;
+    
+    }
+    .card__utils li:nth-child(3) span {
+        width: auto;
+    }
+    
+
+    .button__hover h4 {
+        font-size: 3.2vw;
+        color: #fff;
+        line-height: 3.4vw;
+    }
+    
+    .button__hover svg {
+        width: 5vw;
+        height: 3vw;
+        margin-left: 1vw;
+    }
+    .button__hover{
+        height: 15vw;
+        border-radius: 0 0 5vw 5vw;
+    }
+    
+    .icon__card {
+        display: flex;
+        flex-direction: column;
+        width: 8vw;
+        height: 8vw;
+    
+    }
+    
+    .icon__card>svg {
+        width:8vw;
+        height:8vw;
+        background: #E8F0FF;
+        border-radius: 2vw;
+        padding: 1.2vw;
+    }
+
+
+
+    
+}

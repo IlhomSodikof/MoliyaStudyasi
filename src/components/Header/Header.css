@@ -1,0 +1,405 @@
+.container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* backdrop-filter: blur(1vw) saturate(150%); */
+  background: #fff;
+  /* background-color: rgba(255, 255, 255, 0.426); */
+  z-index: 60;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1vw solid #a6c1e233;
+  padding: 1.5vw 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 7.5vw;
+  height: 3.2vw;
+}
+
+.menu li {
+  display: flex;
+  line-height: 0;
+}
+
+.menu li a {
+  margin: 0 0.8vw;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.92vw;
+  line-height: 0.72vw;
+  color: var(--color-text);
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  padding: 0.8vw 0.5vw;
+  border-radius: 1vw;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 2vw;
+}
+
+
+
+.menu li a:hover {
+  font-style: normal;
+  color: #214690;
+  background-image: url('../../assets/img/line.svg');
+}
+
+
+
+.user__auth__btns {
+  display: flex;
+  align-items: center;
+}
+
+.register__enter {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8vw;
+  line-height: 0.72vw;
+  color: #457ABD;
+  margin-right: 1.7vw;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.5vw;
+  transition: all 0.3s ease;
+}
+
+.login__enter {
+  width: 7vw;
+  padding: 0.7vw;
+  background: #214690;
+  border-radius: 0.8vw;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8vw;
+  line-height: 0.72vw;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.3s ease;
+}
+
+.login__enter:hover{
+  background-color:#122a5a;
+}
+
+.register__enter:hover{
+  background-color: rgba(51, 51, 51, 0.09);
+  border-radius: 0.5vw;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.17);
+}
+
+
+.login__enter svg {
+  width: 1.5vw;
+  height: 1.5vw;
+  margin-left: 0.5vw;
+}
+
+
+.active {
+  font-style: normal;
+  color: black;
+  transform: translateY(-0.5vw);
+  font-weight: bold !important;
+  background-image: url('../../assets/img/line.svg') !important;
+}
+
+
+.hamburger {
+  border: 0.1vw solid #fff;
+  padding: 0.7vw;
+  border-radius: 50%;
+  background-color: #283b8b;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: grid;
+  place-items: center;
+  display: none;
+ 
+}
+
+.hamburger svg{
+  width: 5.5vw;
+  height: 5.5vw;
+}
+
+.hamburger:hover {
+  background-color: #2642af;
+}
+
+
+
+.tooltip {
+position: relative;
+display: inline-block;
+transition: all .99s;
+margin-right: 20px;
+
+
+
+
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color:#2642af;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 10px;
+position: absolute;
+z-index: 100;
+top: 130%;
+left: 51%;
+margin-left: -60px;
+/* transition: all .99s; */
+
+}
+
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+bottom: 102%;
+rotate: 180deg;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #2642af transparent transparent transparent;
+/* transition: all .9s; */
+
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+transition: all .99s;
+padding: 10px;
+
+}
+
+.tooltip .userIcon {
+color:#213998;
+font-size: 25px;
+
+/* transition: all .99s; */
+}
+
+.tooltip .userIcon:hover{
+color: #122a5a;
+}
+
+
+
+@media (max-width:768px){
+
+  .hamburger {
+      display: flex;
+      z-index: 57;
+    }
+
+    .hamburger svg{
+      width: 5.5vw;
+      height: 5.5vw;
+    }
+  
+    .menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      padding-top: 15vw;
+      top: 0vw;
+      background-color: hsla(220, 63%, 35%, 0.708);
+      backdrop-filter: blur(2vw);
+      width: 50%;
+      right: 0;
+      height: 100vh;
+      z-index: 55;
+      border-radius: 3vw 0 0 3vw;
+      transform: translateX(100%);
+      transition: all 0.5s ease;
+    }
+    .menu li a{
+      font-size: 5vw;
+      line-height: 8vw;
+      color: #fff;
+    }
+    .user__auth__btns{
+      position: relative;
+      right: -10vw;
+    }
+
+    .register__enter{
+      font-size: 2vw;
+      line-height: 3vw;
+    }
+
+    .login__enter svg {
+      width: 2.5vw;
+      height: 2.5vw;
+      margin-left: 0.5vw;
+  }
+
+
+    .login__enter{
+      font-size: 2vw;
+      line-height: 3vw;
+      width: 15vw;
+    }
+
+
+    .container{
+      width: 90vw;
+    }
+
+    .logo img {
+      width: 20vw;
+      height: 10vw;
+  }
+
+  .expanded{
+      transform: translateX(0);
+  }
+
+  .overlay__sidebar{
+    background-color: rgba(64, 79, 112, 0.485);
+    backdrop-filter: blur(1vw) saturate(0);
+    z-index: 44;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s ease;
+  }
+
+
+}
+
+
+@media (max-width:500px){
+
+  .hamburger svg{
+      width: 6.5vw;
+      height: 6.5vw;
+    }
+  
+
+  .hamburger {
+      display: flex;
+      z-index: 57;
+    }
+  
+    .menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      padding-top: 15vw;
+      top: 0vw;
+      background-color: hsla(220, 63%, 35%, 0.708);
+      backdrop-filter: blur(2vw);
+      width: 50%;
+      right: 0;
+      height: 100vh;
+      z-index: 55;
+      border-radius: 3vw 0 0 3vw;
+      transform: translateX(100%);
+      transition: all 0.5s ease;
+    }
+
+
+    .menu li a{
+      font-size: 5vw;
+      line-height: 8vw;
+      color: #fff;
+    }
+    .user__auth__btns{
+      position: relative;
+      right: -2vw;
+    }
+
+    .register__enter{
+      font-size: 3vw;
+      line-height: 3.5vw;
+    }
+
+    .login__enter svg {
+      width: 3vw;
+      height: 3vw;
+      margin-left: 0.5vw;
+  }
+
+
+    .login__enter{
+      font-size: 3vw;
+      line-height: 3vw;
+      width: 16vw;
+      padding: 1vw;
+    }
+
+
+    .container{
+      width: 90vw;
+    }
+
+    .logo img {
+      width: 22vw;
+      height: 12vw;
+  }
+
+  .expanded{
+      transform: translateX(0);
+  }
+
+
+}
+
+
+
+.logo:focus {
+  background-color: transparent !important;
+  background: transparent!important;
+}
+.linknav{
+  background-color:transparent!important;
+  background: transparent!important;
+}
+.logo{
+  background-color:transparent!important;
+  background: transparent!important;
+}

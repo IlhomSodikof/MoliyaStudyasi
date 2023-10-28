@@ -1,0 +1,160 @@
+.onlineClasses_full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.onlineClasses_text {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.onlineClasses_text h1 {
+    font-weight: 700;
+    font-size: 3.34vw;
+    line-height: 2.5vw;
+    color: #234893;
+
+}
+
+.onlineClasses_text h4 {
+    font-weight: 600;
+    font-size: 1.27vw;
+    line-height: 1.875vw;
+    color: #457ABD;
+    margin-top: 0.7vw;
+}
+
+.onlineClasses_text p {
+    font-weight: 400;
+    font-size: 0.9375vw;
+    line-height: 1.25vw;
+    color: #000000;
+    margin-top: 0.7vw;
+
+}
+
+/* 
+.onlineClasses_text p:nth-child(4) {
+    color: red;
+} */
+
+.onlineClasses_btn button {
+    font-weight: 600;
+    font-size: 0.93vw;
+    line-height: 0.93vw;
+    color: #FFFFFF;
+    background: linear-gradient(92.42deg, #214691 3.72%, #498ADD 92.65%);
+    border-radius: 0.587vw;
+    border: none;
+    padding: 1vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5vw;
+    transition: .1s ease;
+}
+
+.onlineClasses_btn button:active {
+    background: linear-gradient(92.42deg, #214691ef 3.72%, #4989dde5 92.65%);
+}
+
+
+.onlineClasses_btn button:hover{
+    background: linear-gradient(92.42deg, #071635 3.72%, #20406a 92.65%);
+}
+
+.onlineClasses_btn button svg {
+    margin-left: 0.5vw;
+    width: 2vw;
+    height: 1vw;
+}
+
+.onlineClasses_img {
+    width: 100%;
+    height: auto;
+}
+
+.onlineClasses_img img {
+    width: 35.625vw;
+}
+
+@media (max-width:768px) {
+
+    .onlineClasses_full {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 30vw auto 0 auto;
+        
+    }
+
+
+    .onlineClasses_text {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 1vw;
+    }
+
+
+
+    .onlineClasses_text h1 {
+        font-weight: 700;
+        font-size: 5.34vw;
+        line-height: 6.5vw;
+        color: #234893;
+    
+    }
+    
+    .onlineClasses_text h4 {
+        font-weight: 600;
+        font-size: 3.27vw;
+        line-height: 4.5vw;
+        color: #457ABD;
+        margin-top: 0.7vw;
+        text-align: center;
+    }
+    
+    .onlineClasses_text p {
+        font-weight: 400;
+        font-size: 2.8vw;
+        line-height: 3.2vw;
+        color: #000000;
+        margin-top: 0.7vw;
+        text-align: center;
+        margin-bottom: 5vw;
+    
+    }
+    .onlineClasses_btn button {
+        font-weight: 600;
+        font-size: 4.93vw;
+        line-height: 6.93vw;
+        border-radius: 2vw;
+        padding: 2vw;
+        margin-top: 1.5vw;
+    }
+
+    .onlineClasses_btn button svg {
+        margin-left: 1.5vw;
+        width: 5vw;
+        height: 4vw;
+    }
+
+
+    .onlineClasses_img{
+        margin-top: 5vw;
+    }
+
+    .onlineClasses_img img {
+        width: 100%;
+    }
+
+
+    
+}

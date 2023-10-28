@@ -1,0 +1,182 @@
+.kurs_login {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* shartnoma css **************************************** */
+.shartlar-container {
+    padding: 3rem 20rem 0 10rem;
+}
+.shartlar-container h1 {
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width:930px) {
+    .shartlar-container {
+        padding: 6rem 15rem 0 5rem;
+    }
+    
+}
+@media screen and (max-width:750px) {
+    .shartlar-container {
+        padding: 6rem 10rem 0 2rem;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .shartlar-container {
+        padding: 6rem 6rem 0 2rem;
+    }
+    
+}
+@media screen and (max-width:355px) {
+    .shartlar-container {
+        padding: 6rem 3rem 0 2rem;
+    }
+    
+}
+
+.shartlar-container img {
+    width: 70rem;
+    padding-top: 5rem;
+    cursor:pointer;
+}
+
+@media screen and (max-width:1330px) {
+    .shartlar-container img {
+        width: 60rem;
+    }
+    
+}
+@media screen and (max-width:1140px) {
+    .shartlar-container img {
+        width: 50rem;
+    }
+    
+}
+@media screen and (max-width:970px) {
+    .shartlar-container img {
+        width: 30rem;
+    }
+    
+}
+
+
+.shartlar-container .tariflar,
+.shartlar-container .mundarija,
+.shartlar-container .ilovalar {
+    padding-left: 2rem;
+}
+.shartlar-container .tariflar b,
+.shartlar-container .mundarija b,
+.shartlar-container .ilovalar b {
+    padding-left: 1rem;
+}
+.shartlar-container .mundarija {
+    padding-left: 2rem;
+}
+.shartlar-container .checbox {
+    margin-top: 2rem;
+    font-weight: 600;
+}
+.shartlar-container .checbox input {
+   margin-left: 1rem !important;
+   width: 20px; 
+    height: 20px;
+    align-items: center !important;
+}
+.shartlar-container .checbox label {
+    
+    align-items: center !important;
+}
+
+
+
+/* payment css ******************************** */
+.vl {
+    border-left: 1px  solid #000;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 17rem;
+}
+@media (max-width:1250px) {
+    .vl {
+        display: none;
+    }
+}
+.payment-container {
+    width: 72%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* @media (max-width: 1201px) {
+    .payment-container {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: auto;
+    }
+    .payment-video {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2rem;
+        justify-content: center;
+    }
+    .payment-video  iframe {
+        width: 400px;
+    }
+} */
+.payment-container .video, 
+.payment-container .choose {
+    padding: 0 0 1rem 0;
+    font-family: 'Futura Book';
+}
+
+input[type="file"] {
+    display: none;
+}
+.payment-container label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 80px 15px 15px;
+    font-weight: 600;
+    color: #3f51b5;
+    height: 150px;
+    width: 220px;
+    /* background: #3f51b5; */
+    border: 4px dotted #3f51b5;
+    /* position: absolute; */
+    /* margin-top: 2rem ; */
+    margin: 10rem auto 0 auto;
+    cursor: pointer;
+}
+.payment-container label:hover {
+    background: none;
+    color: #3f51b5;
+    transition: .5s;
+}
+.upload {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Futura Book';
+    src: url('../../futura/Futura Book font.ttf');
+    
+}

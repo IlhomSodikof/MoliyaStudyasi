@@ -1,0 +1,137 @@
+.forma__part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 68px rgba(85, 110, 199, 0.25);
+    border-radius: 2vw;
+    padding: 3vw 2vw;
+    grid-gap: 2vw;
+    position: relative;
+    top: 3vw;
+}
+
+.text__form h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2vw;
+    line-height: 2.5vw;
+    color: #22407C;
+    margin-bottom: 1vw;
+}
+
+.text__form p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9vw;
+    line-height: 1.2vw;
+    color: #49649a;
+}
+
+.text__form {
+    padding: 2vw 2vw 2vw 5vw;
+    background-image: url("../../assets/img/anime/Union.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 11vw;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28vw;
+}
+
+.form input {
+    width: 100%;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    border: none;
+    background: rgba(0, 9, 60, 0.05);
+    border-radius: 0.6vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.24vw;
+    line-height: 1.5vw;
+    color: #4F4F4F;
+}
+
+.form input:nth-child(3) {
+    background: linear-gradient(92.42deg, #214691 3.72%, #498ADD 92.65%);
+    border-radius: 0.6vw;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form input:hover:nth-child(3){
+    background: linear-gradient(92.42deg, #071635 3.72%, #20406a 92.65%);
+    color: #fff;
+}
+
+
+@media (max-width:768px) {
+
+
+    .forma__part {
+        display: grid;
+        grid-template-columns:1fr;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 68px rgba(85, 110, 199, 0.25);
+        border-radius: 2vw;
+        padding: 3vw 2vw;
+        grid-gap: 2vw;
+        position: relative;
+        top: 3vw;
+    }
+
+    .text__form {
+        padding: 2vw 2vw 2vw 5vw;
+        background-image: url("../../assets/img/anime/Union.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 80%;
+        height:28vw;
+        margin: 0 auto;
+    }
+    
+    .text__form h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4vw;
+        line-height: 4.2vw;
+        color: #22407C;
+        margin-bottom: 1vw;
+        margin-left: 2vw;
+    }
+    
+    .text__form p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.5vw;
+        line-height: 3vw;
+        margin-left: 2vw;
+        color: #49649a;
+    }
+    
+
+    .form{
+        width: 100%;
+    }
+
+    .form input{
+        padding: 3vw;
+        font-size: 4vw;
+        border-radius: 3vw;
+        margin-bottom: 2vw;
+    }
+    .form input:nth-child(3) {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 5vw 0;
+        border-radius: 3vw;
+    }
+    
+}

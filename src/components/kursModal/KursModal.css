@@ -1,0 +1,92 @@
+.kursmodal {
+    /* width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kursmodal__wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 19px 82px #D1E6FF;
+    border-radius: 2vw;
+    width: 25vw;
+    height: 30vw;
+    padding: 3vw;
+    position: relative;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.kursmodal__wrapper p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 1.8vw;
+    color: #22407C;
+}
+
+.kursmodal__wrapper h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    color: #457ABD;
+    margin: 1vw 0;
+}
+
+.kursmodal__wrapper input {
+    width: 100%;
+    height: 3.5vw;
+    border: none;
+    outline: none;
+    border: .10vw solid rgba(34, 64, 124, 0.8);
+    border-radius: 1.2vw;
+    margin: .30vw 0;
+    text-indent: .80vw;
+    font-size: 1vw;
+}
+
+.kursmodal__wrapper button {
+    width: 100%;
+    height: 3.5vw;
+    border: none;
+    outline: none;
+    border-radius: 1.2vw;
+    margin: .20vw 0;
+    background: linear-gradient(92.42deg, #214691 3.72%, #498ADD 92.65%);
+    color: white;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.overlayModal {
+    background-color: hsla(0, 0%, 50%, 0.575);
+    z-index: 99;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.kursModalLoader {
+    font-size: 2vw;
+}

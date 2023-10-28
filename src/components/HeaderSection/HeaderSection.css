@@ -1,0 +1,244 @@
+.header__wrapper {
+    position: relative;
+    top: 6vw;
+}
+
+.header__part {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-gap: 2vw;
+}
+
+.left__text h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.91vw;
+    line-height: 3.83vw;
+    color: #214690;
+    margin-bottom: 0.5vw;
+}
+
+.left__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.left__text h1 p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.91vw;
+    line-height: 3.3vw;
+    color: #457ABD;
+    margin-bottom: 2vw;
+}
+
+.left__text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.09vw;
+    line-height: 1.61vw;
+    color: rgba(34, 64, 124, 0.8);
+}
+
+.left__text p span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.09vw;
+    line-height: 1.61vw;
+    color: rgba(34, 64, 124, 0.8);
+}
+
+.header__button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.93vw;
+    line-height: 0.93vw;
+    color: #FFFFFF;
+    background: linear-gradient(92.42deg, #214691 3.72%, #498ADD 92.65%);
+    border-radius: 0.5vw;
+    border: none;
+    padding: 1vw 1.5vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2vw;
+    transition: all 0.3s ease;
+}
+
+.header__button svg {
+    margin-left: 0.5vw;
+    width: 2vw;
+    height: 1vw;
+}
+
+.header__button:hover {
+    background: linear-gradient(92.42deg, #071635 3.72%, #20406a 92.65%);
+}
+
+
+.right__img {
+    display: flex;
+    width: 36vw;
+    height: auto;
+}
+
+
+.right__img img {
+    width: 100%;
+    /* transform: scale(1.1); */
+}
+
+
+
+
+
+/* header__info__banner */
+
+.header__info__banner {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 19px 82px #D1E6FF;
+    border-radius: 2.28vw;
+    padding: 3.8vw;
+}
+
+.info__banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 1vw;
+}
+
+.banner__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner__icon {
+    display: flex;
+    margin-right: 1.6vw;
+    background: #E8F0FF;
+    border-radius: 1.6vw;
+    padding: 1vw;
+}
+
+.banner__icon svg {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.banner__item p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.04vw;
+    line-height: 1.24vw;
+    color: #05061B;
+}
+
+
+.banner__item:nth-child(1) p {
+    width: 12vw;
+}
+
+
+
+
+@media (max-width:768px) {
+    .header__wrapper {
+        top: 8vw;
+    }
+
+    .header__part {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr;
+        grid-gap: 0vw;
+    }
+    .left__text {
+        align-items: center;
+    }
+
+    .left__text h1 {
+        font-size: 5.91vw;
+        line-height: 7.83vw;
+        margin-bottom: 0.5vw;
+        text-align: center;
+    }
+
+    .left__text h1 p {
+        font-size: 5.91vw;
+        line-height: 7.3vw;
+        margin-bottom: 2vw;
+    }
+
+    .left__text>p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.09vw;
+        line-height: 2.61vw;
+        color: rgba(34, 64, 124, 0.8);
+        text-align: center;
+        width: 80%;
+    }
+    
+    .left__text p span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.09vw;
+        line-height: 2.61vw;
+        color: rgba(34, 64, 124, 0.8);
+    }
+    
+
+    .header__button{
+        font-size: 4vw;
+        line-height: 5vw;
+        border-radius: 2vw;
+    }
+    .header__button svg {
+        margin-left: 0.5vw;
+        width: 6vw;
+        height: 3vw;
+    }
+
+
+    .right__img{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .info__banner{
+        grid-template-columns: 1fr;
+        grid-row-gap: 5vw;
+    }
+
+    .banner__icon svg {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .banner__item:nth-child(1) p {
+        width: auto;
+    }
+    
+    .banner__item{
+        justify-content: flex-start;
+    }
+
+ 
+
+    .banner__item p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.04vw;
+        line-height: 5.24vw;
+        color: #05061B;
+        margin-left: 2vw;
+    }
+
+
+    
+}
